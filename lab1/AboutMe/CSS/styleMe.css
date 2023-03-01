@@ -13,7 +13,7 @@ body {
 }
 
 header div {
-    background-color: rgb(55, 57, 95);
+    background-color: rgb(228, 123, 67);
     margin-top: -50px;
     position: fixed;
     width: 100vw;
@@ -43,7 +43,7 @@ h1 {
 
 h2 {
 
-    background-color: rgb(55, 57, 95);
+    background-color: rgb(19, 178, 214);
     color: rgb(250, 251, 253);
     font-size: 11px;
     padding-left: 12px;
