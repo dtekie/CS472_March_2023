@@ -1,0 +1,133 @@
+
+body {
+
+    background-color: #E7F2FF;
+    box-sizing: border-box;
+    color: rgb(55, 57, 95);
+    font-family: "Montserrat";
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+header div {
+    background-color: rgb(55, 57, 95);
+    margin-top: -50px;
+    position: fixed;
+    width: 100vw;
+
+}
+
+main {
+    margin-top: 50px;
+    padding-top: 1em;
+}
+
+div.p {
+
+    padding-left: 20px;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+h1 {
+    color: rgb(252, 252, 252);
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+h2 {
+
+    background-color: rgb(55, 57, 95);
+    color: rgb(250, 251, 253);
+    font-size: 11px;
+    padding-left: 12px;
+
+}
+
+nav {
+
+    color: white;
+    margin-left: 13px;
+
+}
+
+nav>a {
+
+    color: white;
+    font-size: 9px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+nav>a:hover {
+    font-weight: bolder;
+    font-size: 10px;
+
+
+}
+
+nav>a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+h3 {
+    display: inline-block;
+    padding-top: 5px;
+}
+
+#image1 {
+
+    height: 200px;
+    width: 150px;
+}
+
+#image2 {
+
+    height: 200px;
+    width: 300px;
+}
+
+#image {
+    border-radius: 500px;
+    border: 1px solid rgb(55, 57, 95);
+}
+
+ol>li {
+    font-weight: 700;
+}
+
+li>h5 {
+    margin-top: 0px;
+    padding-left: 10px;
+}
+
+li>p {
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: -1px;
+    padding-left: 15px;
+}
+
+.imdb {
+    color: brown;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.imdb:hover {
+    font-weight: 700;
+}
+
+.imdb:visited {
+    color: brown;
+    font-weight: 500;
+    text-decoration: none;
+}

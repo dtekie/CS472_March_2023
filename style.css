@@ -1,27 +1,24 @@
-body {
+/* body {
     font-family: sans-serif;
     background-color: pink;
     background-image: url("./images/cloudbg.jpg");
-    }
+    } */
     /* p {
     color: green;
     } */
     a {
     text-decoration: underline;
     }
-    h2 {
-    font-weight: bold;
-    text-align: center;
-    }
+    
     a:link{color: #FF0000;}
-    p::first-line {
-        color: #ff0000;
-        font-variant: small-caps;
-      }
     a:hover { color: #FF00FF; }
     ul{
         font-style: bold;
         color: blue;
     }
-    #par1{color:aqua}
+    #sec1{color:aqua}
+    #mytitle{color: black;}
+    #mymoods{
+      padd
+    }
     
