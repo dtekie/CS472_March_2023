@@ -26,28 +26,21 @@ margin: 2px;
 
 }
 
-.right{
-    line-height: 25px;
-    float: right;
-}
-.right a{
-    color: brown;
-    text-decoration: none;
-}
-.butten{
+.button{
     clear: both;
     font-weight: bold;
     margin: 0px;
     align-items: center;
 
 }
-.butten input
+.button input
 {   overflow: auto;
     border-color: antiquewhite;
     border-style: outset ;
     border-radius: 2px;
     font-weight: bolder;
     background-color: rgb(221, 115, 129);
+    font-weight: bold;
 }
 #logo{
     position: fixed;
@@ -59,9 +52,4 @@ margin: 2px;
 .form{
     background-color: rgb(215, 188, 249);
 }
-
-/* a img{
-    width:150px;
-    height:400px;
-} */
  
