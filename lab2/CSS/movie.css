@@ -14,7 +14,7 @@ body {
     background: url("../images/bannerbg.png");
   }
   
-  .container {
+  .outer {
     position: relative;
     display: flex;
     justify-self: center;
@@ -32,28 +32,28 @@ body {
     text-shadow: 3px 3px #999999;
   }
   
-  .content,
-  .overall {
+  .inner,
+  .second-inner {
     max-width: 800px;
     display: flex;
   }
   
-  .overall {
+  .second-inner {
     display: flex;
     flex-direction: row-reverse;
     background-color: transparent;
   }
   
-  .general-overview {
+  .third-inner {
     border-top-right-radius: 16px;
     background-color: #a2b964;
   }
   
-  .general-overview dl {
+  .third-inner dl {
     padding: 10px;
   }
   
-  .general-overview__image img {
+  .third-inner__image img {
     border-top-right-radius: 16px;
   }
   
@@ -94,7 +94,7 @@ body {
     margin: 2% 1%;
   }
   
-  .content {
+  .inner {
     border: solid 4px gray;
     border-radius: 20px;
     flex-direction: column;
@@ -110,27 +110,14 @@ body {
     float: left;
   }
   
-  .pagination {
+  .page-number {
     width: 100%;
     text-align: center;
     background-color: #a2b964;
     border-radius: 0 0 16px 16px;
   }
-  
-  /* .footer {
-    opacity: 0.5;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-  } */
-  
-  /* .a {
-    display: block;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-} */
-#validation-tool{
+
+  #validation{
   display: inline;
   right: 5px;
   bottom: 5px;
