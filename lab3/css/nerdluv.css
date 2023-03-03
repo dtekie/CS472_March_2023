@@ -59,4 +59,9 @@ margin: 2px;
 .form{
     background-color: rgb(215, 188, 249);
 }
+
+a img{
+    width:150px;
+    height:400px;
+}
  
