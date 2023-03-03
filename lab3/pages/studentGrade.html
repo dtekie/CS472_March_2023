@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retrive Grade</title>
+    <link rel="stylesheet" href="../css/studentGrade.css" />
+  </head>
+  <body>
+    <h1>Retrive your Grade</h1>
+    <main>
+      <div class = "outer">
+        <form action="https://mumstudents.org/params.php" method="post">
+          <div class "middle">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" /><br />
+
+            <label for="student-id">Student Id:</label>
+            <input type="text" id="studentid" name="studentid" /><br />
+
+            <label for="options">Assignment:</label>
+            <select id="options" name="options">
+              <option value="Assignment-1">Assignment 1</option>
+              <option value="Assignment-2">Assignmet 2</option>
+              <option value="Assignment-3">Assignment 3</option>
+              <option value="Assignment-4">Assignment 4</option>
+            </select>
+          </div>
+          <div>
+            <fieldset id="container">
+              <legend>entry</legend>
+              <input type="radio" id="option1" name="entry" value="February" />
+              <label for="option1">Februay</label><br />
+              <input type="radio" id="option2" name="entry" value="May" />
+              <label for="option2">May</label><br />
+
+              <input type="radio" id="option3" name="entry" value="August" />
+              <label for="option3">August</label><br />
+
+              <input type="radio" id="option4" name="entry" value="November" />
+              <label for="option4">November</label><br />
+            </fieldset>
+          </div>
+          <span>
+            <label for "confirm">
+              <input
+                type="checkbox"
+                id="confirm"
+                name="confirm"
+                value="yes"
+                required
+              />
+              <span
+                >I confirm that i'm only looking up for my own
+                grades</span
+              >
+            </label>
+          </span>
+          <div>
+            <input type="submit" value="Get Grades" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
