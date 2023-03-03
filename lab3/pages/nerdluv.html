@@ -24,40 +24,58 @@
     <form class = "form" action="http://mumstudents.org/params.php">
       <div class="left"> 
         
-          <label for="Name"> Name</label><br>
-          <label for="Gender">Gender</label><br>
-          <label for="age">Age</label><br>
-          <label for="personality">personality</label><br>
-          <label for="os"> Favorite OS:</label><br>
-          <label for="Name"> Seeking Age:</label>
-          <br>
-      </div>
-      <div class="right">
-        <input type="text" name="first_name" size="6" pattern="[A-Za-z]{,16}" title="Enter 16 character letters" required ><br>
-          <input type="radio" id="male" name="gender" value="male" >
+          <label for="name"> Name</label>
+          <input type="text" id ="name" name="name" size="16" pattern="[A-Za-z]{,16}" title="Enter 16 character letters" required ><br>
+          <label for="gender">Gender:</label>
+          <input type="radio" id="male" name="gender" value="male">
           <label for="male">Male</label>
-          <input type="radio" id="Female" name="gender" value="Female" checked >
-          <label for="male">Female</label>
-          <br >
-          
+          <input type="radio" id="female" name="gender" value="female" checked>
+          <label for="female">Female</label><br>
+          <label for="age">Age</label>
           <input type="text" id="age" name="age" size="6" pattern="[1-9]{1,2}" title="Enter age" required >
           <br >
-         
-            <input type="text" name="personality" size="6" pattern="[A-Z]{1,4}">
+          <label for="personality">personality</label>
+          <input type="text" name="personality" size="6" pattern="[A-Z]{1,4}">
             <a href="http://www.humanmetrics.com/cgi-win/JType2.asp"> (Don't know your personality)</a><br>
-          
+          <label for="os"> Favorite OS:</label>
           <select name="OS" id="operating">
             <option value="Windows">Windows</option>
             <option value="mackintosh ">mac ox</option>
-            
             <option value="Linix">Linix</option>
           </select>
            <br>
-          
+          <label for="Name"> Seeking Age:</label>
           <input type="text" name="seeking" size="6" pattern="[0-9]{1,2}" placeholder="min" >
           to
           <input type="text" name="seeking" size="6" pattern="[0-9]{1,2}" placeholder="max" >
           <br>
+          <br>
+      </div>
+      <div class="right">
+        <!-- <input type="text" name="first_name" size="6" pattern="[A-Za-z]{,16}" title="Enter 16 character letters" required ><br> -->
+          <!-- <input type="radio" id="male" name="gender" value="male" >
+          <label for="male">Male</label>
+          <input type="radio" id="Female" name="gender" value="Female" checked >
+          <label for="male">Female</label>
+          <br > -->
+<!--           
+          <input type="text" id="age" name="age" size="6" pattern="[1-9]{1,2}" title="Enter age" required >
+          <br > -->
+         
+            <!-- <input type="text" name="personality" size="6" pattern="[A-Z]{1,4}">
+            <a href="http://www.humanmetrics.com/cgi-win/JType2.asp"> (Don't know your personality)</a><br> -->
+          
+          <!-- <select name="OS" id="operating">
+            <option value="Windows">Windows</option>
+            <option value="mackintosh ">mac ox</option>
+            <option value="Linix">Linix</option>
+          </select>
+           <br> -->
+          
+          <!-- <input type="text" name="seeking" size="6" pattern="[0-9]{1,2}" placeholder="min" >
+          to
+          <input type="text" name="seeking" size="6" pattern="[0-9]{1,2}" placeholder="max" >
+          <br> -->
       </div>
       <div 
       class="butten"> <input type="submit" value="SignUP"> 
