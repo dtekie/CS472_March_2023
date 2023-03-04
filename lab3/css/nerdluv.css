@@ -1,6 +1,6 @@
 body{
     user-select: none;
-	overflow-y: hidden;
+	/* overflow-y: hidden; */
 	display: flex;
     margin-top: 80px;
 	}
@@ -19,7 +19,7 @@ legend{
 
 .left{
  float: left;
- line-height: 25px;
+ /* line-height: 25px; */
 width: 100%;
 margin: 2px;
 
@@ -37,8 +37,8 @@ margin: 2px;
 {   overflow: auto;
     border-color: antiquewhite;
     border-style: outset ;
-    border-radius: 2px;
-    font-weight: bolder;
+    border-radius: 2px; 
+    font-weight:bold;
     background-color: rgb(221, 115, 129);
     font-weight: bold;
 }

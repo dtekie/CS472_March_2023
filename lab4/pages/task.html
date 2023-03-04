@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task List</title>
+  </head>
+  <link rel="stylesheet" href="../css/task.css" />
+  <body>
+    <div class="container">
+      <h1>Task List</h1>
+
+      <form>
+        <div class="controls">
+          <label for="task">Task:</label><br>
+          <input type="text" id="task" name="task" size="32"/><br /><br />
+
+          <button type="button" id="add-task" onclick="addTask()" style="width: 250px; height: 20px">
+            Add Task
+          </button><br><br>
+          <button type="button" id="clear-task" onclick="clearTask()" style="width: 250px; height: 20px">
+            Clear Task</button
+          ><br /><br />
+        </div>
+        <div class="textarea">
+          <label for="task-list">Task List:</label><br>
+        <textarea
+          id="task-list"
+          name="task-list"
+          rows="5"
+          cols="60"
+        ></textarea>
+
+        </div>
+
+        
+      </form>
+
+      <script>
+        const taskListTextarea = document.getElementById("task-list");
+        const taskInput = document.getElementById("task");
+
+        function loadTaskList() {
+          // Load the task list from local storage
+          taskListTextarea.value = localStorage.getItem("taskList");
+        }
+
+        function addTask() {
+          const newTask = taskInput.value;
+          if (newTask.trim() !== "") {
+            const taskList = taskListTextarea.value + "- " + newTask + "\n";
+            taskListTextarea.value = taskList;
+            taskInput.value = "";
+
+            // Save the updated task list to local storage
+            localStorage.setItem("taskList", taskList);
+          }
+        }
+
+        function clearTask() {
+          taskListTextarea.value = "";
+          taskInput.value = "";
+
+          // Remove the task list from local storage
+          localStorage.removeItem("taskList");
+        }
+
+        loadTaskList();
+      </script>
+    </div>
+  </body>
+</html>
