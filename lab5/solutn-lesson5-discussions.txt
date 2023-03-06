@@ -1,0 +1,69 @@
+
+1. What is the difference between the following 2 statements?
+
+setTimeout(booyah, 2000);
+setTimeout(booyah(), 2000);
+
+The difference between the two statements is that the first one will execute 
+the booyah function after a delay of 2000 milliseconds (2 seconds) and 
+pass the function reference as an argument to setTimeout, 
+however, the second one does not execute because the first argument provided 
+is a value, if the function has a return value, instead of
+a function. It is not a correct argument.
+
+2. What do the following 2 alerts display?
+var myfunc = function(a, x) {
+ return a * x;
+};
+var x = myfunc(2, 3);
+var y = myfunc;
+alert(x);
+alert(y(2,3)); 
+
+The first alert will display the value of x, which is the result of calling 
+the myfunc function with arguments 2 and 3. Since myfunc multiplies its two 
+arguments together, x will have a value of 6.
+
+The second alert will also display 6, because it calls y as a function with 
+arguments 2 and 3, which is the same as calling myfunc with those arguments.
+
+3. function booyah1() {
+alert("BOOYAH!");
+}
+
+function booyah2() {
+alert("BOOYAH!");
+}
+
+window.onload = function() {
+setTimeout(booyah1, 2000);
+setTimeout(booyah2, 2000);
+};
+(this code has already implemented im my js directory and pages directory, 
+you can run the code it the browser to check)
+
+4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive 
+Javascript (and the reasons
+for using it)?
+
+Unobtrusive JavaScript is a design approach where JavaScript is separated from 
+the HTML structure and kept in separate files. The idea behind this approach is 
+to separate the behavior of the web page from its content and presentation, 
+allowing for greater modularity, maintainability, and flexibility.
+
+Practically, unobtrusive JavaScript allows us to create more flexible, accessible, 
+and reusable code. It can also improve website performance by reducing the amount of
+JavaScript code that needs to be loaded on each page, making pages load faster and 
+reducing server load.
+
+In summary, the main reasons for using unobtrusive JavaScript are:
+
+Separation of concerns: Unobtrusive JavaScript separates presentation, content, and 
+behavior, making code more modular and maintainable.
+
+Reusability: Unobtrusive JavaScript allows code to be reused across multiple pages 
+and projects.
+
+Performance: Unobtrusive JavaScript can improve website performance by reducing the 
+amount of JavaScript code that needs to be loaded on each page.
+
