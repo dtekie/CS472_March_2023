@@ -10,28 +10,35 @@
 
       <form>
         <div class="controls">
-          <label for="task">Task:</label><br>
-          <input type="text" id="task" name="task" size="32"/><br /><br />
+          <label for="task">Task:</label><br />
+          <input type="text" id="task" name="task" size="32" /><br /><br />
 
-          <button type="button" id="add-task" onclick="addTask()" style="width: 250px; height: 20px">
-            Add Task
-          </button><br><br>
-          <button type="button" id="clear-task" onclick="clearTask()" style="width: 250px; height: 20px">
+          <button
+            type="button"
+            id="add-task"
+            onclick="addTask()"
+            style="width: 250px; height: 20px"
+          >
+            Add Task</button
+          ><br /><br />
+          <button
+            type="button"
+            id="clear-task"
+            onclick="clearTask()"
+            style="width: 250px; height: 20px"
+          >
             Clear Task</button
           ><br /><br />
         </div>
         <div class="textarea">
-          <label for="task-list">Task List:</label><br>
-        <textarea
-          id="task-list"
-          name="task-list"
-          rows="5"
-          cols="60"
-        ></textarea>
-
+          <label for="task-list">Task List:</label><br />
+          <textarea
+            id="task-list"
+            name="task-list"
+            rows="5"
+            cols="60"
+          ></textarea>
         </div>
-
-        
       </form>
 
       <script>
