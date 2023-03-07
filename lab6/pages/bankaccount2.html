@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bank Accounts</title>
+	<script type="text/javascript" src="../js/bankaccount2.js"></script>
+</head>
+<body>
+	<h1>Create New Account</h1>
+	<label>Name:</label>
+	<input type="text" id="nameInput" /><br />
+	<label>Deposit:</label>
+	<input type="number" step="0.01" id="depositInput" /><br />
+	<button onclick="createAccount()">Create Account</button>
+	<hr />
+	<h1>Accounts</h1>
+	<textarea id="accountList" rows="10" cols="50"></textarea>
+	<br />
+	<button onclick="depositOrDebit('deposit')">Deposit</button>
+	<button onclick="depositOrDebit('debit')">Debit</button>
+	
+	<div id="transactionPage" style="display:none;">
+		<h1 id="transactionTitle">Deposit</h1>
+		<label>Account:</label>
+		<select id="accountsDropdown"></select><br />
+		<label>Amount:</label>
+		<input type="number" step="0.01" id="amountInput" /><br />
+		<button id="submitTransactionButton" disabled="true" onclick="submitTransaction()">Submit</button>
+		<button onclick="closeTransactionPage()">Cancel</button>
+	</div>
+</body>
+</html>
