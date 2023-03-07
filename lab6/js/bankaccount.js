@@ -6,11 +6,11 @@ var bankApp = (function(){
 	var y;
 	
 	function showData(){
-		var dataText = "";
+		var accountListText = "";
 		for(let i = 0; i < accountInfo.length; i++){
-			dataText +="Account name: "+accountInfo[i].name +" Balance: "+ accountInfo[i].balance+"\n";
+			accountListText +="Account name: "+accountInfo[i].name +" Balance: "+ accountInfo[i].balance+"\n";
 		}
-		document.getElementById("ouput").value = dataText;
+		document.getElementById("ouput").value = accountListText;
 		
 	}
 	
@@ -36,19 +36,19 @@ document.getElementById("debit").onclick = debit;
 document.getElementById("Deposit").onclick = debit2;
 document.getElementById("deposit1").onclick = deposit;
 document.getElementById("debit4").onclick = deposit2;
-document.getElementById("submit1").onclick = main;
-document.getElementById("submit2").onclick = main2;
+document.getElementById("submit1").onclick = handleFormSubmit;
+document.getElementById("submit2").onclick = handleAccountAction;
 
-function main(){
+function handleFormSubmit(){
 	myFunction()
-	helll()
+	popupateAccountDropdown()
 	myFunction2();
 	showData2();
     
 }
-function main2(){
+function handleAccountAction(){
 	myFunction()
-	helll()
+	popupateAccountDropdown()
 	myFunction3();
 	showData2();
     
@@ -60,7 +60,7 @@ function debit(){
 	myFunction();
 	myFunction2();
 	
-	helll();
+	popupateAccountDropdown();
 	
 }
 
@@ -69,22 +69,22 @@ function debit2(){
 	myFunction();
 	myFunction3();
 	
-	helll();
+	popupateAccountDropdown();
 	
 }
 function showData2(){
-	var dataText = "";
+	var accountListText = "";
 	for(let i = 0; i < accountInfo.length; i++){
-		dataText +="Account name: "+accountInfo[i].name +" Balance: "+ accountInfo[i].balance+"\n";
+		accountListText +="Account name: "+accountInfo[i].name +" Balance: "+ accountInfo[i].balance+"\n";
 	}
-	document.getElementById("ouput").value = dataText;
+	document.getElementById("ouput").value = accountListText;
 	
 }
 
 
 
 
-function helll(){
+function popupateAccountDropdown(){
 	//document.getElementById("debit").style.display=none;
 	var select = document.getElementById("debit3");
 
@@ -149,11 +149,11 @@ function deposit2(){
 }
 
 function showData2(){
-	var dataText = "";
+	var accountListText = "";
 	for(let i = 0; i < accountInfo.length; i++){
-		dataText +="Account name: "+accountInfo[i].name +" Balance: "+ parseInt(accountInfo[i].balance)+"\n";
+		accountListText +="Account name: "+accountInfo[i].name +" Balance: "+ parseInt(accountInfo[i].balance)+"\n";
 	}
-	document.getElementById("ouput").value = dataText;
+	document.getElementById("ouput").value = accountListText;
 	
 }
 
