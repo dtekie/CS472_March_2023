@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>ASCIImation</title>
-    <link href="../css/ascii.css" type="text/css" rel="stylesheet" >
+    <link href="../css/ascii.css" type="text/css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/myanimation.js"></script>
     <script src="../js/ascii.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>CS472: ASCII Animation Viewer</h1>
     <div id="container">
-        <textarea name="maintext" id="textarea" cols="80" rows="20" placeholder="My animation will be played in this text area"></textarea>
-        <div class="controls">
-            <fieldset>
-                <legend>Play Controls</legend>
-                <input type="button" id="btnstart" name="btnstartname" value="Start">
-                <input type="button" id="btnstop" name="btnstopname" value="Stop" disabled>
-            </fieldset>
-            <fieldset>
-                <legend>Animation</legend>
-                <select id="animtype">
-                    <option value="blank">Blank</option>
-                    <option value="juggler">Juggler</option>
-                    <option value="exercise">Exercise</option>
-                    <option value="dive">Dive</option>   
-                    <option value="bike">Bike</option>
-                    <option value="custom">Custom</option>
-                </select>  
-            </fieldset>
-            <fieldset>
-                <legend>Size</legend>
-                <select id="size">
-                    <option value="tiny">Tiny</option>
-                    <option value="small">Small</option>
-                    <option value="medium" selected>Medium</option>
-                    <option value="large">Large</option>
-                    <option value="extralarge">Extra Large</option>   
-                    <option value="xxl">XXL</option>
-                </select> 
-            </fieldset>
-            <fieldset>
-                <legend>Speed</legend>
-                <input type="checkbox" id="turbo">Turbo
-            </fieldset>
-        </div>
+      <textarea
+        name="maintext"
+        id="textarea"
+        cols="80"
+        rows="20"
+        placeholder="My animation will be played in this text area"
+      ></textarea>
+      <div class="controls">
+        <fieldset>
+          <legend>Play Controls</legend>
+          <input
+            type="button"
+            id="btnstart"
+            name="btnstartname"
+            value="Start"
+          />
+          <input
+            type="button"
+            id="btnstop"
+            name="btnstopname"
+            value="Stop"
+            disabled
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Animation</legend>
+          <select id="animtype">
+            <option value="blank">Blank</option>
+            <option value="juggler">Juggler</option>
+            <option value="exercise">Exercise</option>
+            <option value="dive">Dive</option>
+            <option value="bike">Bike</option>
+            <option value="custom">Custom</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Size</legend>
+          <select id="size">
+            <option value="tiny">Tiny</option>
+            <option value="small">Small</option>
+            <option value="medium" selected>Medium</option>
+            <option value="large">Large</option>
+            <option value="extralarge">Extra Large</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Speed</legend>
+          <input type="checkbox" id="turbo" />Turbo
+        </fieldset>
+      </div>
     </div>
-</body>
+  </body>
 </html>
