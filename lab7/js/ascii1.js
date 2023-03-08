@@ -57,4 +57,5 @@ function displayAnimation(animationType){
         document.getElementById("textarea").value = splitted[index++];
         if(index>=splitted.length){ index = 0;}
     }, delay);
+
 }
