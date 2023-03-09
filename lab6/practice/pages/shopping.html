@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        (function () {
+          function DeleteItem() {
+            $("this").parent().remove();
+          }
+          $(document).ready(function () {
+            $("button").click(DeleteItem);
+          });
+        })();
+      </script>
+  </head>
+  <body>
+
+    <h1>Shopping card</h1>
+    <ul>
+      <li>Shirt<button>Delete</button></li>
+      <li>Tie<button>Delete</button></li>
+      <li>Jacket<button>Delete</button></li>
+      <li>Hat<button>Delete</button></li>
+    </ul>
+    <!-- Javascript: -->
+    <!-- <script src="../practice/shopping.js"></script> -->
+  <!-- </body>
+</html> --> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <script>
+        // $(document).ready(function(){
+        //     $("#bye").on("click", function(){
+        //         $("#Bye").show()
+        //         $("#Hello").hide()
+
+        //     });
+
+        //     $("#hello").on("click", function(){
+        //         $("#Hello").show()
+        //         $("#Bye").hide()
+        //     })
+
+        
+        // });
+
+        // const byeBtn = document.getElementById("bye")
+        // const helloBtn = document.getElementById("hello")
+        // const Bye = document.getElementById("Bye")
+        // const Hello = document.getElementById("Hello")
+
+       (function(){
+            function DeletItem(){
+                $(this).parent().remove()
+            }
+        $(document).ready(function(){
+            $("button").click(DeletItem)
+        });
+       })();
+   
+    </script>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+<ul>
+
+    <li> Shirt<button>Delete</button></li>
+    <li> Tie<button>Delete</button></li>
+    <li> Jacket<button>Delete</button></li>
+    <li> Hat<button>Delete</button></li>
+</ul>
+
+
+
+
+
+    <!-- <p id="Hello">Hello World</p>
+    <p id="Bye">Bye world</p>
+
+    <button id="hello">hello world</button>
+    <button id="bye">bye world</button> -->
+</body>
+</html>

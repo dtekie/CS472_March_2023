@@ -127,5 +127,10 @@
   
 // });
 
+let x = 5;
+console.log(x++);
+console.log(++x);
 
 
+$("p:first").remove();
+$("div>p")

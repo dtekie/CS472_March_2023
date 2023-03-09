@@ -1,0 +1,92 @@
+1. Which, if any, of the following 3 code fragments are equivalent? 
+Explain why they are different, if they are. 
+Explain why they can have different parameters and be equivalent, 
+if they are equivalent.
+
+//code fragment 1
+$("li").each(function(idx, e) {
+ $(e).css(“color”, “yellow”); });
+//code fragment 2
+$("li").each(function() {
+ $(this).css(“color”, “yellow”); });
+//code fragment 3
+$("li").each(function(idx) {
+ $(this).css(“color”, “yellow”); });
+
+//soln1
+All three code fragments achieve the same goal of setting the CSS color property 
+of all li elements to yellow. However, there are differences between the fragments:
+
+Code fragment 1 specifies two parameters, idx and e, for the anonymous function 
+passed to the each method. idx represents the index of the current element being 
+processed, while e represents the element itself. Inside the function, e is passed 
+to the $ function to create a jQuery object, which is then used to set the CSS color 
+property.
+
+Code fragment 2 uses the this keyword to refer to the current element inside the 
+anonymous function passed to the each method. this inside the function represents 
+the current element being processed, and it is passed to the $ function to create 
+a jQuery object, which is then used to set the CSS color property.
+
+Code fragment 3 specifies one parameter, idx, for the anonymous function passed to 
+the each method. idx represents the index of the current element being processed. 
+Inside the function, this is used to refer to the current element, and it is passed 
+to the $ function to create a jQuery object, which is then used to set the CSS color 
+property.
+
+Despite these differences, all three code fragments are equivalent in terms of their 
+outcome. They all select all li elements and apply the CSS color property of yellow 
+to each element.
+
+Regarding the parameters, it is possible for code fragments to have different 
+parameters and still be equivalent if those parameters are not used within the 
+function body. In this case, the parameter idx is not used in the function body 
+for fragment 1, but it is still equivalent to the other fragments.
+
+2. Write a jQuery expression to find all divs on a page that include an unordered list 
+in them, and make their text color be blue.
+ <div>no ul here </div>
+ <div>
+ This does contain a ul.
+ <ul>
+ <li>the first item</li>
+ <li>the second item</li>
+ </ul>
+ </div>
+ <script>
+<!—INSERT YOUR JQUERY CODE HERE - - >
+ </script>
+ </body>
+
+//soln2
+
+ <script>
+//the following two lines of code do the same thing
+$('div:has(ul)').css('color', 'blue');
+//$("div").has("ul").css("color", "blue");
+ </script>
+
+3. Write jQuery code to append the following div element (and all of its contents) 
+dynamically to the body element.
+<div><h1>JQuery Core</h1></div>
+HTML:
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+ <title>JS Bin</title>
+ </head>
+ <body>
+
+ </body>
+ </html> 
+
+//soln3
+
+ <script>
+  $(document).ready(function() {
+    $('body').append('<div><h1>JQuery Core</h1></div>');
+  });
+  </script>
+
+
