@@ -1,0 +1,56 @@
+Note: The following are the lines of code that are solutions to the quiz3 questions.
+If you need to see the output, you can check the html pages in the same directory.
+
+1. Find the text in the first paragraph (stripping out the html), then set the html of the last paragraph to
+show it is just text (the red bold is gone).
+
+<script>
+$(document).ready(function() {
+  let text = $('p:first').text(); // get text of first paragraph
+  $('p:last').html(text); // set last paragraph HTML to first paragraph text
+});
+</script>
+
+2. Write jQuery code to create a red background for the level-2 list items.
+
+<script>
+        $(document).ready(function(){
+            $(".level-2").css('background-color','red');
+        })
+</script>
+
+3. Write jQuery code to select the element that comes immediately before item three and change its
+background color to blue.
+<script>
+      $(document).ready(function () {
+        $("li.third-item").prev().css("background-color", "blue");
+      });
+</script>
+
+4. Let us one additional requirement for the "Go Vegetarian" button of the Webville Eatery Menu
+described in Chapter 4 of Head First jQuery: "Turkey" in the ingredient list of any entree is replaced by
+"Mashed Potatoes" in the vegetarian version. You may assume there is a class "turkey" that identifies
+these items in the list. Describe the changes to the Javascript (jQuery) code to implement this new
+requirement.
+
+<script>
+    $(document).ready(function() {
+    $("#vegOn").click(function() {
+      $(".mp").hide();// assuming i have Mashed Potatoes class
+      $(".turkey").text("Mashed Potatoes");
+    });
+  });
+</script>
+
+5. Write Javascript (jQuery) code to change the color of the parent and grandparent list items of the span
+of text ("some text") in the following to green.
+
+<script>
+        $(document).ready(function(){
+        $("span").parent().css("color","green");
+        $("span").parent().parent().css("color","green");
+        });
+
+
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 3. Write jQuery code to select the element that comes immediately 
+        before item three and change its background color to blue. -->
+    <script>
+      $(document).ready(function () {
+        $("li.third-item").prev().css("background-color", "blue");
+      });
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li>list item 1</li>
+      <li>list item 2</li>
+      <li class="third-item">list item 3</li>
+      <li>list item 4</li>
+      <li>list item 5</li>
+    </ul>
+  </body>
+</html>

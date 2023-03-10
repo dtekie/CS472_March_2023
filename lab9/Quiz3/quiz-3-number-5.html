@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- 5. Write Javascript (jQuery) code to change the color of the parent and 
+        grandparent list items of the span of text ("some text") in the following 
+        to green. -->
+
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+        // <!—INSERT YOUR JQUERY CODE HERE - - >
+        $("span").parent().css("color","green");
+        $("span").parent().parent().css("color","green");
+        });
+
+    //     $(document).ready(function() {
+    //     $('span').parents().css('color', 'green');
+    // });
+    </script>
+<div class="ancestors">
+ <div> (great-grandparent)
+ <ul> (grandparent)
+ <li> (direct parent)
+ <span>some text</span>
+ </li>
+ </ul>
+ </div>
+</div>
+</body>
+</html>
+</head>
+<body>
+    
+</body>
+</html>

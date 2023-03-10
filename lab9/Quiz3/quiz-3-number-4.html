@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 4. Let us one additional requirement for the "Go Vegetarian" button of the Webville Eatery Menu
+described in Chapter 4 of Head First jQuery: "Turkey" in the ingredient list of any entree is replaced by
+"Mashed Potatoes" in the vegetarian version. You may assume there is a class "turkey" that identifies
+these items in the list. Describe the changes to the Javascript (jQuery) code to implement this new
+requirement. -->
+
+<script>
+    $(document).ready(function() {
+    $("#vegOn").click(function() {
+      $(".nvt").hide();
+      $(".turkey").text("Mashed Potatoes");
+    });
+  });
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Menu</h1>
+	<ul class="menu">
+		<li class="menu_item">House Grilled Panini<span class="details"></span>
+			<div class="hide">
+				<ul class="menu_list">
+					<li class="meat">proscuttio</li>
+					<li>provolone</li>
+					<li>avocado</li>
+				</ul>
+			</div>
+		</li>
+		<li class="menu_item">Caesar Salad<span class="details"></span>
+			<div class="hide">
+				<ul class="menu_list">
+					<li>romaine lettuce</li>
+					<li>croutons</li>
+					<li>parmesan cheese</li>
+				</ul>
+			</div>
+		</li>
+		<li class="menu_item">Margherita Pizza<span class="details"></span>
+			<div class="hide">
+				<ul class="menu_list">
+					<li>mozzarella cheese</li>
+					<li>tomato sauce</li>
+					<li>fresh basil</li>
+				</ul>
+			</div>
+		</li>
+		<li class="menu_item">Spaghetti and Meatballs<span class="details"></span>
+			<div class="hide">
+				<ul class="menu_list">
+					<li>spaghetti</li>
+					<li>meatballs</li>
+					<li>tomato sauce</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- <script src="script.js"></script> -->
+    <script src="./quiz-4.js"></script>
+</body>
+</html>
