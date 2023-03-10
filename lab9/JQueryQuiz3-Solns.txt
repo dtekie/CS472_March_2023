@@ -36,8 +36,7 @@ requirement.
 <script>
     $(document).ready(function() {
     $("#vegOn").click(function() {
-      $(".mp").hide();// assuming i have Mashed Potatoes class
-      $(".turkey").text("Mashed Potatoes");
+		$(".turkey").replaceWith('<li class="Mashed">Mashed Potatoes</li>');
     });
   });
 </script>

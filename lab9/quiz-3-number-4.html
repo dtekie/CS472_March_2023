@@ -14,13 +14,13 @@ these items in the list. Describe the changes to the Javascript (jQuery) code to
 requirement. -->
 
 <script>
-    $(document).ready(function() {
-    $("#vegOn").click(function() {
-      $(".nvt").hide();
-      $(".turkey").text("Mashed Potatoes");
-    });
-  });
-</script>
+	$(document).ready(function() {
+	  $("#vegOn").click(function() {
+		$(".turkey").replaceWith('<li class="Mashed">Mashed Potatoes</li>');
+		// i have another line here
+	  });
+	});
+  </script>  
 </body>
 </html> -->
 

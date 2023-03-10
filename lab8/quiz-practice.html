@@ -63,18 +63,32 @@
  <title>JS Bin</title>
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  <script>
-  $(document).ready(function() {
-    $('body').append('<div><h1>JQuery Core</h1></div>');
-  });
+  // $(document).ready(function() {
+  //   $('body').append('<div><h1>JQuery Core</h1></div>');
+  // });
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("button").click(clickMe);
+    })
+    
+    function clickMe(){
+      $("div:last").toggle();
+    }
   </script>
  </head>
  <body>
-
+  <button>ClickMe</button>
+  <div>
+    <p>This is first paragraph of div1</p>
+    <p id="m">This is second paragraph of div1</p>
+    <p>This is third paragraph 0f div1</p>
+  </div>
+  <div>
+    <p>This is first paragraph of div2</p>
+    <p id="m">This is second paragraph of div2</p>
+    <p>This is third paragraph of div2</p>
+  </div>
  </body>
  </html> 
 
- 
- </body>
-    
-  </body>
-</html>
