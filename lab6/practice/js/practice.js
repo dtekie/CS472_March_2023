@@ -23,7 +23,7 @@
 // (function () {
 //     console.log('This function is immediately invoked!');
 //   })();
-// /*
+/*
 
 // In this code above, we define an anonymous function expression that takes
 // no parameters and logs a message to the console. We wrap this function expression
@@ -127,10 +127,45 @@
   
 // });
 
-let x = 5;
-console.log(x++);
-console.log(++x);
+// let x = 5;
+// console.log(x++);
+// console.log(++x);
 
 
-$("p:first").remove();
-$("div>p")
+// $("p:first").remove();
+// $("div>p")
+
+// class ClassWithPrivateField {
+//     #privateField;
+//     constructor() {
+//     this.#privateField = 42;
+//     }
+//     // getInstance(){
+//     //     return this.#privateField;
+//     // }
+//     }
+
+//     const instance = new ClassWithPrivateField();
+//     instance.getInstance(){
+//         return #privateField;
+//     }
+    
+//     console.log(instance.getInstance())
+// (function(){
+
+
+// let count = 0; 
+// function incr(n) { 
+    
+// count += n; 
+// } 
+// function reset() {
+// count = 0; 
+// } 
+// incr(4); 
+// incr(2); 
+// console.log(count);
+// })();
+
+
+

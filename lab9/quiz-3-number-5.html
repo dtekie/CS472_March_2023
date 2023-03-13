@@ -14,11 +14,22 @@
 </head>
 <body>
     <script>
+        // $(document).ready(function(){
+        // // <!—INSERT YOUR JQUERY CODE HERE - - >
+        // $("span").parent().css("color","green");
+        // $("span").parent().parent().css("color","green");
+        // });
+
         $(document).ready(function(){
-        // <!—INSERT YOUR JQUERY CODE HERE - - >
-        $("span").parent().css("color","green");
-        $("span").parent().parent().css("color","green");
-        });
+  // Select all parents of the span element except the span itself
+  $("span").parent().not("span").css("color","green");
+  // Select all grandparents of the span element except the span and its parent
+  $("span").parents().eq(1).not("span").css("color","green").contents().filter(function() {
+    return this.nodeType === 3;
+  }).wrap("<span></span>");
+});
+
+
 
     //     $(document).ready(function() {
     //     $('span').parents().css('color', 'green');

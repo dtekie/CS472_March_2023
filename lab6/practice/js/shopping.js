@@ -7,7 +7,7 @@
 //   });
 // })();
 
-(function () {
+// (function () {
   // function DeleteItem() {
   //   $("this").parent().remove();
   // }
@@ -16,8 +16,12 @@
   // });
 // })();
 
-$("button").click(function() {
-  $(this).parent().remove();
-})
-})();
+// $("button").click(function() {
+//   $(this).parent().remove();
+// })
+// })();
+
+//practice
+
+
 

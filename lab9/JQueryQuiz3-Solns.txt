@@ -6,8 +6,8 @@ show it is just text (the red bold is gone).
 
 <script>
 $(document).ready(function() {
-  let text = $('p:first').text(); // get text of first paragraph
-  $('p:last').html(text); // set last paragraph HTML to first paragraph text
+  let str = $('p:first').text(); // get text of first paragraph
+  $('p:last').html(str); // set last paragraph HTML to first paragraph text
 });
 </script>
 

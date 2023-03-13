@@ -62,32 +62,37 @@
  <meta charset="utf-8">
  <title>JS Bin</title>
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <link rel="stylesheet" href="style.css">
  <script>
-  // $(document).ready(function() {
-  //   $('body').append('<div><h1>JQuery Core</h1></div>');
-  // });
+  $(document).ready(function() {
+    $('body').append('<div><h1>JQuery Core</h1></div>');
+  });
   </script>
+  
   <script>
     $(document).ready(function(){
       $("button").click(clickMe);
     })
     
+    // function clickMe(){
+    //   $("div:last").toggle();
+    // }
     function clickMe(){
-      $("div:last").toggle();
+      $("div:first").toggleClass("naodi");
     }
   </script>
  </head>
  <body>
   <button>ClickMe</button>
-  <div>
+  <div class="naodi">
     <p>This is first paragraph of div1</p>
     <p id="m">This is second paragraph of div1</p>
     <p>This is third paragraph 0f div1</p>
   </div>
   <div>
-    <p>This is first paragraph of div2</p>
-    <p id="m">This is second paragraph of div2</p>
-    <p>This is third paragraph of div2</p>
+    <p>This is fourth paragraph of div2</p>
+    <p id="m">This is fifth paragraph of div2</p>
+    <p>This is sixths paragraph of div2</p>
   </div>
  </body>
  </html> 
