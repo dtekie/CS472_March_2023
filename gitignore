@@ -2,3 +2,16 @@
 *.txt
 *.docx
 *.pdf
+*.bin
+*.md
+*.json
+node_modules/
+screenshots/
+*.png
+*.jpg
+*.cmd
+license/
+*.eslintignore
+*.eslintrc
+
+
