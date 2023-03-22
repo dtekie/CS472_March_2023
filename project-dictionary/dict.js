@@ -7,7 +7,7 @@ $(document).ready(function () {
         searchTerm: document.getElementById("searchKey").value,
       }),
       contentType: "application/json; charset=utf-8",
-      // dataType: "json",
+      //dataType: "json",
       success: showSearchResult,
       error: function (err) {
         console.log(err);
