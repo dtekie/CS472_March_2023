@@ -1,6 +1,5 @@
-var mysql = require("mysql");
 
-// database connection 
+var mysql = require("mysql");
 var connection = mysql.createConnection({
   user: "daniel",
   password: "miusql",
